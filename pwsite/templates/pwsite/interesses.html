@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os meus Interesses em Desenvolvimento Web</title>
+</head>
+<body>
+    <header>
+        <h1>Os meus Interesses em Desenvolvimento Web</h1>
+        <nav>
+            <a href="{% url 'pwsite:index' %}">Página Inicial</a> |
+            <a href="{% url 'pwsite:sobre' %}">Sobre</a> |
+            <a href="{% url 'pwsite:interesses' %}">Interesses</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Meus Interesses em Desenvolvimento Web</h2>
+        <p>Olá! Nesta página, gostaria de compartilhar um pouco sobre os meus interesses em programação web, especialmente em Python, Django e HTML.</p>
+
+        <h2>Python</h2>
+        <p>Python é uma linguagem de programação versátil e poderosa. Estou fascinado com sua simplicidade e legibilidade de código, além da vasta gama de bibliotecas disponíveis para diversas finalidades.</p>
+
+        <h2>Django</h2>
+        <p>Django é um framework web em Python que simplifica o desenvolvimento de aplicativos web robustos e escaláveis. Estou aprendendo Django para criar aplicações web dinâmicas e estou impressionado com sua capacidade de tornar o desenvolvimento rápido e eficiente.</p>
+
+        <h2>HTML</h2>
+        <p>HTML (HyperText Markup Language) é a espinha dorsal da web. Estou interessado em aprender mais sobre HTML para entender como a estruturação do conteúdo web influencia a experiência do usuário e para criar páginas web bem estruturadas e acessíveis.</p>
+
+        <h2>Projetos Futuros</h2>
+        <p>Estou ansioso para explorar mais projetos interessantes relacionados a Python, Django e HTML. Alguns dos meus projetos futuros incluem a criação de um blog pessoal usando Django, o desenvolvimento de um site de portfólio para mostrar meus projetos de desenvolvimento web e a construção de uma aplicação web interativa usando HTML, CSS e JavaScript.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programação Web, Universidade Lusófona - Todos os direitos reservados.</p>
+
+        <p>&copy; {% now "Y" %} Universidade Lusófona - Todos os direitos reservados. | Data: {{ current_date }}</p>
+    </footer>
+
+</body>
+</html>

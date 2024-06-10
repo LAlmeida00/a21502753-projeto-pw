@@ -1,0 +1,329 @@
+[
+    {
+        "banda": "Metallica",
+        "nome": "Kill 'Em All",
+        "ano": 1983,
+        "capa": "bandas/Kill 'Em All.jpg",
+        "musicas": [
+            {"nome": "Hit the Lights", "duracao_musica": "4:17", "spotify_link": "https://open.spotify.com/track/4hh0IO5OHTigfnPTpDleL7"},
+            {"nome": "The Four Horsemen", "duracao_musica": "7:08", "spotify_link": "https://open.spotify.com/track/5RrnDgjoFxDINI5aFQPZXt"},
+            {"nome": "Motorbreath", "duracao_musica": "3:08", "spotify_link": "https://open.spotify.com/track/6RqEJvpEzzlwj8g0wKG1ln"},
+            {"nome": "Jump in the Fire", "duracao_musica": "4:41", "spotify_link": "https://open.spotify.com/track/4fVBFyglBhMf0erfF7pBJp"},
+            {"nome": "(Anesthesia) Pulling Teeth", "duracao_musica": "4:15", "spotify_link": "https://open.spotify.com/track/4hsJQXAXPbni5QyChVzVsD"},
+            {"nome": "Whiplash", "duracao_musica": "4:06", "spotify_link": "https://open.spotify.com/track/38fIaph07Kd8ZIN6l17ZJs"},
+            {"nome": "Phantom Lord", "duracao_musica": "4:52", "spotify_link": "https://open.spotify.com/track/5R5b3EZkGsYsZz2XdUNrXI"},
+            {"nome": "No Remorse", "duracao_musica": "6:26", "spotify_link": "https://open.spotify.com/track/2uQBTkujGFuwUnA0fi5Qnb"},
+            {"nome": "Seek & Destroy", "duracao_musica": "6:55", "spotify_link": "https://open.spotify.com/track/28WmNsclKsrVmdv3tDmoYU"},
+            {"nome": "Metal Militia", "duracao_musica": "5:10", "spotify_link": "https://open.spotify.com/track/2TBRfDnfwsOIaGxkkXFBN2"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Ride_the_Lightning.jpg",
+        "nome": "Ride the Lightning",
+        "ano": 1984,
+        "musicas": [
+            {"nome": "Fight Fire with Fire", "duracao_musica": "4:44", "spotify_link": "https://open.spotify.com/track/3x7EeeVnDXwQpmqgkm1d9F"},
+            {"nome": "Ride the Lightning", "duracao_musica": "6:36", "spotify_link": "https://open.spotify.com/track/0gg7tr9y0W7XeWFHIb7Ulm"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Master_of_Puppets.jpg",
+        "nome": "Master of Puppets",
+        "ano": 1986,
+        "musicas": [
+            {"nome": "Battery", "duracao_musica": "5:10", "spotify_link": "https://open.spotify.com/track/4pKz4mJZv7j3YyMAJnTEwO"},
+            {"nome": "Master of Puppets", "duracao_musica": "8:36", "spotify_link": "https://open.spotify.com/track/5E8y4fsbbBKpVDX0CLTSG3"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/...And_Justice_for_All.jpg",
+        "nome": "...And Justice for All",
+        "ano": 1988,
+        "musicas": [
+            {"nome": "Blackened", "duracao_musica": "6:40", "spotify_link": "https://open.spotify.com/track/4oB1trNQEXZmMgpwEvI9YF"},
+            {"nome": "...And Justice for All", "duracao_musica": "9:44", "spotify_link": "https://open.spotify.com/track/2xx0pEVkR6p7VJRXBf8bzx"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Metallica_(The_Black_Album).jpg",
+        "nome": "Metallica (The Black Album)",
+        "ano": 1991,
+        "musicas": [
+            {"nome": "Enter Sandman", "duracao_musica": "5:29", "spotify_link": "https://open.spotify.com/track/1hKdDCpiI9mqz1jVHRKG0E"},
+            {"nome": "Sad But True", "duracao_musica": "5:24", "spotify_link": "https://open.spotify.com/track/5WvAo7DNuPRmk4APhdPzi8"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Load.jpg",
+        "nome": "Load",
+        "ano": 1996,
+        "musicas": [
+            {"nome": "Ain't My Bitch", "duracao_musica": "5:04", "spotify_link": "https://open.spotify.com/track/1mXu3yQOzoRZO5d9GY1o8B"},
+            {"nome": "2 X 4", "duracao_musica": "5:28", "spotify_link": "https://open.spotify.com/track/3OMIm0ic2H5IfQSrtNxB8w"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Reload.jpg",
+        "nome": "Reload",
+        "ano": 1997,
+        "musicas": [
+            {"nome": "Fuel", "duracao_musica": "4:30", "spotify_link": "https://open.spotify.com/track/1NHj7RUzLs4KkQuvq8Wm81"},
+            {"nome": "The Memory Remains", "duracao_musica": "4:39", "spotify_link": "https://open.spotify.com/track/4WRr7uBpBjqLEH3G01BNk9"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Garage_Inc.jpg",
+        "nome": "Garage Inc.",
+        "ano": 1998,
+        "musicas": [
+            {"nome": "Turn the Page", "duracao_musica": "6:06", "spotify_link": "https://open.spotify.com/track/1YUe38c6Qm9O4S90YrJV3o"},
+            {"nome": "Whiskey in the Jar", "duracao_musica": "5:04", "spotify_link": "https://open.spotify.com/track/4kItu6UAQflANr3Z4GBEbw"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/S&M.jpg",
+        "nome": "S&M",
+        "ano": 1999,
+        "musicas": [
+            {"nome": "The Call of Ktulu", "duracao_musica": "9:34", "spotify_link": "https://open.spotify.com/track/5W8tZQaCGx6E1vRjnIk7ss"},
+            {"nome": "Until It Sleeps", "duracao_musica": "4:29", "spotify_link": "https://open.spotify.com/track/1YRueKfPK13QwRnIOkMyH2"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/St._Anger.jpg",
+        "nome": "St. Anger",
+        "ano": 2003,
+        "musicas": [
+            {"nome": "Frantic", "duracao_musica": "5:50", "spotify_link": "https://open.spotify.com/track/6cRcmT6DZKFtgDOtt9elMk"},
+            {"nome": "St. Anger", "duracao_musica": "7:21", "spotify_link": "https://open.spotify.com/track/0si0TBMU9nCn6WdX1TkxZa"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Death_Magnetic.jpg",
+        "nome": "Death Magnetic",
+        "ano": 2008,
+        "musicas": [
+            {"nome": "That Was Just Your Life", "duracao_musica": "7:08", "spotify_link": "https://open.spotify.com/track/5AJoTTpbi8HiymDWGqGvJb"},
+            {"nome": "The End of the Line", "duracao_musica": "7:52", "spotify_link": "https://open.spotify.com/track/6cXMbxBqxWQveRZr5vbhTO"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Lulu.jpg",
+        "nome": "Lulu",
+        "ano": 2011,
+        "musicas": [
+            {"nome": "Brandenburg Gate", "duracao_musica": "4:19", "spotify_link": "https://open.spotify.com/track/4lUzIge5YoKlDl0ZBlxvZL"},
+            {"nome": "The View", "duracao_musica": "5:17", "spotify_link": "https://open.spotify.com/track/6dXvYzGULfYuNZXxtQQeMD"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Hardwired..._to_Self-Destruct.jpeg",
+        "nome": "Hardwired... to Self-Destruct",
+        "ano": 2016,
+        "musicas": [
+            {"nome": "Hardwired", "duracao_musica": "3:09", "spotify_link": "https://open.spotify.com/track/5ii6bafBZ3CJ1k8tUvnhO3"},
+            {"nome": "Atlas, Rise!", "duracao_musica": "6:28", "spotify_link": "https://open.spotify.com/track/1jPK4eVBb4JNVmrSYyOz9W"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/The_$5.98_E.P._-_Garage_Days_Re-Revisited.jpg",
+        "nome": "The $5.98 E.P. - Garage Days Re-Revisited",
+        "ano": 1987,
+        "musicas": [
+            {"nome": "Helpless", "duracao_musica": "6:39", "spotify_link": "https://open.spotify.com/track/0WUSBlq6ke6T6a02WHTaIG"},
+            {"nome": "The Small Hours", "duracao_musica": "6:43", "spotify_link": "https://open.spotify.com/track/0zYiNMYxZLyj7xXfJfK3NE"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Helping Hands..._Live_&_Acoustic_at_the_Masonic.jpg",
+        "nome": "Helping Hands... Live & Acoustic at the Masonic",
+        "ano": 2019,
+        "musicas": [
+            {"nome": "Disposable Heroes", "duracao_musica": "8:00", "spotify_link": "https://open.spotify.com/track/1PQlZxnXbhPr8s59kU2L1j"},
+            {"nome": "The House of the Rising Sun", "duracao_musica": "5:22", "spotify_link": "https://open.spotify.com/track/7fT0igACxmrRwUV6Sh0BkL"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/The_Good,_the_Bad_&_the_Live.jpg",
+        "nome": "The Good, the Bad & the Live",
+        "ano": 2020,
+        "musicas": [
+            {"nome": "Wherever I May Roam", "duracao_musica": "6:42", "spotify_link": "https://open.spotify.com/track/5fbKzkjw2O7rNfuEXjt3r9"},
+            {"nome": "The Unforgiven II", "duracao_musica": "6:36", "spotify_link": "https://open.spotify.com/track/40rCz6Hrl2RoVfJvPVRP86"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/S&M2.png",
+        "nome": "S&M2",
+        "ano": 2020,
+        "musicas": [
+            {"nome": "Moth Into Flame", "duracao_musica": "5:50", "spotify_link": "https://open.spotify.com/track/6o0I9RUm5zOSeHh8Q4ZtDj"},
+            {"nome": "The Outlaw Torn", "duracao_musica": "9:49", "spotify_link": "https://open.spotify.com/track/2bD3Gdgpg5IgDdxG0rkt20"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Live_Shit_Binge_&_Purge.jpg",
+        "nome": "Live Shit: Binge & Purge",
+        "ano": 1993,
+        "musicas": [
+            {"nome": "Enter Sandman (Live)", "duracao_musica": "5:30", "spotify_link": "https://open.spotify.com/track/3VnGsyc87imYbAMbFMWTo8"},
+            {"nome": "For Whom the Bell Tolls (Live)", "duracao_musica": "5:08", "spotify_link": "https://open.spotify.com/track/2KoEf6YmHuwvnBysddsdJB"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Orgullo_Pasión_y_Gloria_Tres_Noches_en_la_Ciudad_de_México.jpg",
+        "nome": "Orgullo, Pasión, y Gloria: Tres Noches en la Ciudad de México",
+        "ano": 2009,
+        "musicas": [
+            {"nome": "Creeping Death (Live)", "duracao_musica": "6:41", "spotify_link": "https://open.spotify.com/track/3aFkXL4kzA6C57UgpSsW4e"},
+            {"nome": "Sad But True (Live)", "duracao_musica": "6:15", "spotify_link": "https://open.spotify.com/track/6CZI0iqt7ByldAtFzC40eJ"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Francais_Pour_Une_Nuit.jpg",
+        "nome": "Francais Pour Une Nuit",
+        "ano": 2009,
+        "musicas": [
+            {"nome": "One (Live)", "duracao_musica": "8:24", "spotify_link": "https://open.spotify.com/track/2ZrKmJKXJ93v0mvkwrZ8LZ"},
+            {"nome": "Enter Sandman (Live)", "duracao_musica": "5:32", "spotify_link": "https://open.spotify.com/track/1RMDxU2b1hPyF9DMrZgAEz"}
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "capa": "bandas/Live_at_Grimey's.jpg",
+        "nome": "Live at Grimey's",
+        "ano": 2010,
+        "musicas": [
+            {"nome": "No Remorse (Live)", "duracao_musica": "5:18", "spotify_link": "https://open.spotify.com/track/0I9zF3sqVgyDpZy5u0mBzD"},
+            {"nome": "Am I Evil? (Live)", "duracao_musica": "7:50", "spotify_link": "https://open.spotify.com/track/3WIGnhgVVpDDgqUK0Q8b87"}
+        ]
+    },
+    {
+        "banda": "Aerosmith",
+        "capa": "bandas/Toys_in_the_Attic.jpg",
+        "nome": "Toys in the Attic",
+        "ano": 1975,
+        "musicas": [
+            {"nome": "Toys in the Attic", "duracao_musica": "3:07", "spotify_link": "https://open.spotify.com/track/0MJzWBjF0eJd4zhL3LskL7"},
+            {"nome": "Uncle Salty", "duracao_musica": "4:10", "spotify_link": "https://open.spotify.com/track/2yWvLsZxSTC9EZI0Nb0cgo"},
+            {"nome": "Adam's Apple", "duracao_musica": "4:33", "spotify_link": "https://open.spotify.com/track/0bROxC0njFamFfFZ7uk8mc"},
+            {"nome": "Walk This Way", "duracao_musica": "3:41", "spotify_link": "https://open.spotify.com/track/0YRhmyjwpr2cX8TVW7sF3y"},
+            {"nome": "Big Ten Inch Record", "duracao_musica": "2:16", "spotify_link": "https://open.spotify.com/track/7rL8DqFxhdo0xFkxoy2URa"},
+            {"nome": "Sweet Emotion", "duracao_musica": "4:35", "spotify_link": "https://open.spotify.com/track/4JNfFxP0J5x84jr6RMZJHx"},
+            {"nome": "No More No More", "duracao_musica": "4:34", "spotify_link": "https://open.spotify.com/track/3WYhm7RfgPpLRz2PwA27ab"},
+            {"nome": "Round and Round", "duracao_musica": "5:03", "spotify_link": "https://open.spotify.com/track/0XjzCW4LcdU55fUe6ovHCh"},
+            {"nome": "You See Me Crying", "duracao_musica": "5:12", "spotify_link": "https://open.spotify.com/track/1mE8B7emQBz4DfVQo7q3QA"}
+        ]
+    },
+    {
+        "banda": "Led Zeppelin",
+        "capa": "bandas/Led_Zeppelin_IV.jpg",
+        "nome": "Led Zeppelin IV",
+        "ano": 1971,
+        "musicas": [
+            {"nome": "Black Dog", "duracao_musica": "4:55", "spotify_link": "https://open.spotify.com/track/3pXdLmSlNUFDL8dK2bmrxN"},
+            {"nome": "Rock and Roll", "duracao_musica": "3:40", "spotify_link": "https://open.spotify.com/track/4lA2GxtXaGeB4HqB0gkvBu"},
+            {"nome": "The Battle of Evermore", "duracao_musica": "5:51", "spotify_link": "https://open.spotify.com/track/3s1rdixdGXIKFbMhP3W6hJ"},
+            {"nome": "Stairway to Heaven", "duracao_musica": "8:02", "spotify_link": "https://open.spotify.com/track/6ltzsmQQbmdoHHbLZ4ZN25"},
+            {"nome": "Misty Mountain Hop", "duracao_musica": "4:38", "spotify_link": "https://open.spotify.com/track/2YmO34mXphoABhkYGqenov"},
+            {"nome": "Four Sticks", "duracao_musica": "4:44", "spotify_link": "https://open.spotify.com/track/5nAGWIrBpxaFeVBjszqlFg"},
+            {"nome": "Going to California", "duracao_musica": "3:32", "spotify_link": "https://open.spotify.com/track/5R1envc4HOqw7gkz61hwyq"},
+            {"nome": "When the Levee Breaks", "duracao_musica": "7:08", "spotify_link": "https://open.spotify.com/track/4QPH7GdnZd6g3Ar1U1rKoq"}
+        ]
+    },
+    {
+        "banda": "Queen",
+        "capa": "bandas/A_Night_at_the_Opera.png",
+        "nome": "A Night at the Opera",
+        "ano": 1975,
+        "musicas": [
+            {"nome": "Death on Two Legs (Dedicated to...)", "duracao_musica": "3:43", "spotify_link": "https://open.spotify.com/track/0qzYgv1DhDfJD6C5X3Lyw9"},
+            {"nome": "Lazing on a Sunday Afternoon", "duracao_musica": "1:07", "spotify_link": "https://open.spotify.com/track/5VJaxk2GD0NFl9Ta6UegiS"},
+            {"nome": "I'm in Love with My Car", "duracao_musica": "3:05", "spotify_link": "https://open.spotify.com/track/0lmZ5epKgO8qrg8M6UWyky"},
+            {"nome": "You're My Best Friend", "duracao_musica": "2:52", "spotify_link": "https://open.spotify.com/track/4Bhxv0J3hBvzZSNOQMNvtd"},
+            {"nome": "'39", "duracao_musica": "3:30", "spotify_link": "https://open.spotify.com/track/1zV40EuoVTq4mR7PzZbd6v"},
+            {"nome": "Sweet Lady", "duracao_musica": "4:01", "spotify_link": "https://open.spotify.com/track/4kvqTfaCbZHZ4kuFaX1Io5"},
+            {"nome": "Seaside Rendezvous", "duracao_musica": "2:15", "spotify_link": "https://open.spotify.com/track/6VexnCOsck3tC2NTUeBcZb"},
+            {"nome": "The Prophet's Song", "duracao_musica": "8:21", "spotify_link": "https://open.spotify.com/track/5mNrUTNdXlP2NMiA6wkm2l"},
+            {"nome": "Love of My Life", "duracao_musica": "3:38", "spotify_link": "https://open.spotify.com/track/5Z7ygHQo02SUrFmcgpwsKW"},
+            {"nome": "Good Company", "duracao_musica": "3:23", "spotify_link": "https://open.spotify.com/track/6DKBJLk4fOLl0bSzpWuuBj"},
+            {"nome": "Bohemian Rhapsody", "duracao_musica": "5:55", "spotify_link": "https://open.spotify.com/track/7tFiyTwD0nx5a1eklYtX2J"},
+            {"nome": "God Save the Queen", "duracao_musica": "1:12", "spotify_link": "https://open.spotify.com/track/70zZczjEFhGIGg0IF6LQO3"}
+        ]
+    },
+    {
+        "banda": "The Rolling Stones",
+        "capa": "bandas/Sticky_Fingers.jpg",
+        "nome": "Sticky Fingers",
+        "ano": 1971,
+        "musicas": [
+            {"nome": "Brown Sugar", "duracao_musica": "3:50", "spotify_link": "https://open.spotify.com/track/5K4W6rqBFWDnAN6FQUkS6x"},
+            {"nome": "Sway", "duracao_musica": "3:52", "spotify_link": "https://open.spotify.com/track/1sdpBfD41NhqBqsQO80Pxn"},
+            {"nome": "Wild Horses", "duracao_musica": "5:42", "spotify_link": "https://open.spotify.com/track/6mFkJmJqdDVQ1REhVfGgd1"},
+            {"nome": "Can't You Hear Me Knocking", "duracao_musica": "7:15", "spotify_link": "https://open.spotify.com/track/0m7z6lxf0zg9KXpm2PrRl0"},
+            {"nome": "You Gotta Move", "duracao_musica": "2:32", "spotify_link": "https://open.spotify.com/track/6D8aF28jwNsdwco5ldTf3l"},
+            {"nome": "Bitch", "duracao_musica": "3:37", "spotify_link": "https://open.spotify.com/track/7mlU6lkEvn5eU4SKTbvu1H"},
+            {"nome": "I Got the Blues", "duracao_musica": "3:53", "spotify_link": "https://open.spotify.com/track/3Z5tC05v5PyAX5W4IMjQ6b"},
+            {"nome": "Sister Morphine", "duracao_musica": "5:34", "spotify_link": "https://open.spotify.com/track/3o8dpoFMVpeX3WwoU0CLxD"},
+            {"nome": "Dead Flowers", "duracao_musica": "4:03", "spotify_link": "https://open.spotify.com/track/6bM9D2uKNhQvl9XUfOC5us"},
+            {"nome": "Moonlight Mile", "duracao_musica": "5:56", "spotify_link": "https://open.spotify.com/track/3ZGVYeyjNEgiFBY2xXLP2p"}
+        ]
+    },
+    {
+        "banda": "The Prodigy",
+        "capa": "bandas/Experience.jpg",
+        "nome": "Experience",
+        "ano": 1992,
+        "musicas": [
+            {"nome": "Jericho", "duracao_musica": "3:43", "spotify_link": "https://open.spotify.com/track/4e2cu14RbSUpw6w6bD2F5d"},
+            {"nome": "Music Reach (1/2/3/4)", "duracao_musica": "4:12", "spotify_link": "https://open.spotify.com/track/0RMjvc1x34WtoUfLpnuRHZ"},
+            {"nome": "Wind It Up", "duracao_musica": "4:33", "spotify_link": "https://open.spotify.com/track/1C3Hw71sRhQth7YvkWgPtw"},
+            {"nome": "Your Love (Remix)", "duracao_musica": "5:30", "spotify_link": "https://open.spotify.com/track/2QQHgBW6JVqFVz5Gn2SgKf"},
+            {"nome": "Hyperspeed (G-Force Part 2)", "duracao_musica": "5:16", "spotify_link": "https://open.spotify.com/track/2dz4NpCN2Yx99y1NZ4LGuA"},
+            {"nome": "Charly (Trip into Drum and Bass Version)", "duracao_musica": "5:12", "spotify_link": "https://open.spotify.com/track/4P32Gg8y3WkUJxj4zY7d1l"},
+            {"nome": "Out of Space", "duracao_musica": "4:58", "spotify_link": "https://open.spotify.com/track/2BwAO3mUVMVj5nMNU8g2PU"},
+            {"nome": "Everybody in the Place (155 and Rising)", "duracao_musica": "4:11", "spotify_link": "https://open.spotify.com/track/3CGafKod3LrqXz8i6CJSCo"},
+            {"nome": "Weather Experience", "duracao_musica": "8:06", "spotify_link": "https://open.spotify.com/track/2XuU0t2a9F2aEE7mBCF9il"},
+            {"nome": "Fire (Sunrise Version)", "duracao_musica": "4:58", "spotify_link": "https://open.spotify.com/track/1y9YbYVCsZhYKmlUtrAXgq"},
+            {"nome": "Ruff in the Jungle Bizness", "duracao_musica": "5:10", "spotify_link": "https://open.spotify.com/track/4JiJ8SvBiAoElPVhSEV5aP"},
+            {"nome": "Death of the Prodigy Dancers (Live)", "duracao_musica": "3:43", "spotify_link": "https://open.spotify.com/track/6qqyBc6PYyiFzh3yoOlxp9"}
+        ]
+    },
+    {
+        "banda": "The Prodigy",
+        "capa": "bandas/The_Fat_of_the_Land.jpg",
+        "nome": "The Fat of the Land",
+        "ano": 1997,
+        "musicas": [
+            {"nome": "Smack My Bitch Up", "duracao_musica": "5:43", "spotify_link": "https://open.spotify.com/track/0uUqNuuC1xXUjnrLxNJ7Kq"},
+            {"nome": "Breathe", "duracao_musica": "5:35", "spotify_link": "https://open.spotify.com/track/1h2NDq9WUHa9i9FIB4kRtk"},
+            {"nome": "Diesel Power", "duracao_musica": "4:17", "spotify_link": "https://open.spotify.com/track/6WMyWEUoB3jm79puqkNS5D"},
+            {"nome": "Funky Shit", "duracao_musica": "5:16", "spotify_link": "https://open.spotify.com/track/0vIh1KVtM7KWnrfU5IKISN"},
+            {"nome": "Serial Thrilla", "duracao_musica": "5:11", "spotify_link": "https://open.spotify.com/track/6T50cLhtq8YQjUvICzf26v"},
+            {"nome": "Mindfields", "duracao_musica": "5:41", "spotify_link": "https://open.spotify.com/track/3v0flwPrsIdbRZrCAbHn0f"},
+            {"nome": "Narayan", "duracao_musica": "9:05", "spotify_link": "https://open.spotify.com/track/50FL2vh7OpJbKwNgmaDSuM"},
+            {"nome": "Firestarter", "duracao_musica": "4:40", "spotify_link": "https://open.spotify.com/track/4MG0IGWJU6AnHjc7rRQIEY"},
+            {"nome": "Climbatize", "duracao_musica": "6:36", "spotify_link": "https://open.spotify.com/track/2BpYwA9MyNkMnmyY2zMIpu"},
+            {"nome": "Fuel My Fire", "duracao_musica": "4:18", "spotify_link": "https://open.spotify.com/track/1z5CF8zsyGJUN0xo0haWSN"}
+        ]
+    }
+]

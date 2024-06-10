@@ -1,0 +1,13 @@
+{% extends 'filmes/layout.html' %}
+
+{% block content %}
+    <h2>{{ filme.nome }}</h2>
+    <h3>Atores:</h3>
+    <ul>
+        {% for ator in filme.atores.all %}
+            <li>{{ ator.nome }}</li>
+        {% endfor %}
+    </ul>
+    <p><img src="{{ filme.foto.url }}" alt="{{ filme.nome }}"></p>
+    <a href="{% url 'filmes:filmes'%}">Lista de filmess</a>
+{% endblock %}

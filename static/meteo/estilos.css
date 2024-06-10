@@ -1,0 +1,77 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: white;
+}
+
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* Estilo para o container que ocupa toda a tela */
+div.container {
+    display: grid;
+    grid-template-columns: 10vw 1fr 1fr;
+    grid-template-rows: 5vh 1fr 50px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    gap: 10px;
+    background-color: #F3CA52;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Estilo para header */
+header {
+    grid-area: header;
+}
+
+nav {
+    text-align: right;
+}
+
+
+/* Estilo para main */
+main {
+    grid-area: main;
+}
+
+/* Estilo para footer */
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.weather-days-container {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os elementos quebrem para a próxima linha */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se necessário */
+}
+
+.weather-day {
+    flex: 0 0 auto; /* Define o tamanho flexível dos elementos */
+    margin-right: 20px; /* Espaço entre os elementos */
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+
+
+
+@media (max-width: 768px) {
+    div.container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+}

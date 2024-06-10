@@ -1,0 +1,21 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+    <h2>Editar Banda</h2>
+
+<div class="form_container">
+    <form action="{% url 'bandas:editar_album' album.id %}" method="post" enctype='multipart/form-data'>
+        {% csrf_token %}
+        <table class="form-table">
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Concluir">
+    </form>
+</div>
+
+<div class="button-back">
+    <div class="header-item">
+        <button onclick="window.history.back()" id="white-button">Cancelar</button>
+    </div>
+</div>
+{% endblock %}

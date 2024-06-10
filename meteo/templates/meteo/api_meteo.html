@@ -1,0 +1,53 @@
+{% extends 'meteo/layout.html' %}
+
+{% block content %}
+<div>
+    <title>API Meteorologia</title>
+
+    <h1>API Meteorologia PW2024</h1>
+    <p>Esta página oferece acesso a uma API personalizada, fornecendo uma variedade de informações úteis para desenvolvedores e utilizadores que desejam utilizar em suas próprias aplicações.</p>
+
+    <h1>Sobre a API:</h1>
+    <p>Esta API foi feita com intuito académico, oferecendo uma série de endpoints para adquirir conhecimento na criação de uma API personalizada.</p>
+    <p>Cada endpoint é projetado para fornecer informações detalhadas sobre diferentes aspectos da API.</p>
+
+    <h2>Endpoints</h2>
+
+    <h3>1. Lista de Cidades</h3>
+    <p><strong>Metodo:</strong> GET</p>
+    <p><strong>URL:</strong>/api/cities/</p>
+    <p><strong>Descrição:</strong> Retorna uma lista de todas as cidades.</p>
+    <a href="./cities/" target="blank"><button>JSON com a lista das cidades</button></a>
+
+    <h3>2. Previsao Meteorologica de Hoje de uma cidade</h3>
+    <p><strong>Metodo:</strong> GET</p>
+    <p><strong>URL:</strong>/api/weather/today/{string}/</p>
+    <p><strong>Descrição:</strong> Retorna a previsao meteorologica de hoje, de uma cidade (Exemplo: Lisboa)</p>
+    <p><strong>Parâmetros:</strong>
+    <ul>
+        <li>city (string): cidade desejada</li>
+        <li>temp_min (integer): temperatura mínima</li>
+        <li>temp_max (integer): temperatura maxima</li>
+        <li>data (date): Data da previsao ou registro</li>
+        <li>weather (string): descricao do estado do tempo</li>
+        <li>icon_url (string): URL do icone do estado do tempo</li>
+    </ul></p>
+    <a href="./weather/today/Lisboa/" target="blank"><button>JSON com Previsão meteorologica de hoje</button></a>
+
+    <h3>3. Previsao Meteorologica de 5 dias de uma cidade</h3>
+    <p><strong>Metodo:</strong> GET</p>
+    <p><strong>URL:</strong>/api/weather/5days/{string}/</p>
+    <p><strong>Descrição:</strong> Retorna a previsao meteorologica dos proximos 5 dias de uma cidade (Exemplo: Lisboa)</p>
+    <ul>
+        <li>city (string): cidade desejada</li>
+        <li>temp_min (integer): temperatura mínima</li>
+        <li>temp_max (integer): temperatura maxima</li>
+        <li>data (date): Data da previsao ou registro</li>
+        <li>weather (string): descricao do estado do tempo</li>
+        <li>icon_url (string): URL do icone do estado do tempo</li>
+    </ul></p>
+    <a href="./weather/5days/Lisboa/" target="blank"><button>JSON com Previsão meteorologica prox. 5 dias</button></a>
+
+</div>
+{% endblock %}
+

@@ -1,0 +1,27 @@
+{% extends 'projetoPortfolioPW/layout.html' %}
+
+{% block content %}
+    <h1>Área Científica</h1>
+    {% for area in areas_cientificas %}
+        <h2>{{ area.nome }}</h2>
+        {% for curso in cursos %}
+            <p><a href="{% url 'projetoPortfolioPW:curso' curso.id %}">{{ curso.nome }}</a></p>
+        {% empty %}
+            <p>Nenhum curso disponível para esta área.</p>
+        {% endfor %}
+    {% empty %}
+        <p>Nenhuma área científica disponível.</p>
+    {% endfor %}
+
+    {% if request.user.is_authenticated %}
+        <h2>Opções:</h2>
+        <ul>
+                <a href="{% url 'projetoPortfolioPW:novo_curso'%}"><button>Criar Curso</button></a>
+        </ul>
+    {% endif %}
+
+
+{% endblock %}
+
+
+

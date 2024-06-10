@@ -1,0 +1,22 @@
+{% extends 'artigos/layout.html' %}
+
+{% block content %}
+    {% for artigo in artigos %}
+        <div style="margin-bottom: 20px;">
+            {% if artigo.user.image_profile %}
+                <img src="{{ artigo.user.image_profile.url }}" alt="Imagem do Autor" style="max-width: 100px;">
+            {% endif %}
+            <p><a href="{% url 'artigos:user' artigo.user.id %}">{{ artigo.user.user }}</a></p>
+            <h1><a href="{% url 'artigos:artigo' artigo.id %}">{{ artigo.titulo }}</a></h1>
+            <p>{{ artigo.texto|truncatechars:300 }} <a href="{% url 'artigos:artigo' artigo.id %}">Leia mais</a></p>
+            <p>Data de publicação: {{ artigo.data_criacao }}</p>
+        </div>
+    {% endfor %}
+    <ul>
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'artigos:novo_post' %}"><button>Criar novo Post</button></a>
+    {% endif %}
+    </ul>
+
+{% endblock %}
+

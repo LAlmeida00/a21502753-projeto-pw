@@ -1,0 +1,17 @@
+{% extends 'projetoPortfolioPW/layout.html' %}
+
+{% block content %}
+    <h3>Nova Disciplina</h3>
+
+    <form action="" method="post" enctype='multipart/form-data'>
+    <!-- enctype deve ser definido se houver submissão de ficheiros ou imagens -->
+
+      {% csrf_token %}   <!-- obrigatório nos forms Django -->
+      <table>
+          {{ form }}   <!-- insere input para cada atributo da classe Banda, numa tabela -->
+      </table>
+      <input type="submit" value="Guardar">
+
+    </form>
+    <a href="{% url 'projetoPortfolioPW:disciplinas' %}">Cancelar</a>
+{% endblock %}

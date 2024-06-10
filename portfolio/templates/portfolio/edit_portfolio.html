@@ -1,0 +1,36 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+    <h2>Editar Portfólio</h2>
+        <h3>Projetos Atuais</h3>
+    <ul>
+        {% for project in projects %}
+            <li>
+                <strong>{{ project.project_name }}</strong><br>
+                {% if project.photo %}
+                    <img src="{{ project.photo.url }}" alt="Project Photo"><br>
+                {% endif %}
+                {% if project.website_link %}
+                    <a href="{{ project.website_link }}" target="_blank">Website</a><br>
+                {% endif %}
+                <form action="{% url 'portfolio:delete_project' project.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="Excluir">
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <form action="{% url 'portfolio:edit_portfolio' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <h3>Adicionar Projeto</h3>
+        {{ form.as_p }}
+
+        <input type="submit" value="Adicionar">
+    </form>
+
+    <div>
+        <button onclick="window.history.back()">Cancelar</button>
+    </div>
+{% endblock %}

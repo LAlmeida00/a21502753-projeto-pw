@@ -1,0 +1,25 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+
+<h1>Login</h1>
+
+{% if mensagem %}
+  <p>mensagem: {{ mensagem }}</p>
+{% endif %}
+<div class="form_container">
+    <form action="{% url 'bandas:login' %}" method="post">
+      {% csrf_token %}
+      <p>Username:  <input type="text" name="username" placeholder="Username.."></p>
+      <p>Password:  <input type="password" name="password" placeholder="Password.."></p>
+      <input type="submit" value="Login">
+    </form>
+    <a href="{% url 'bandas:password_reset' %}" class="password-reset-link">Recuperar Password</a>
+</div>
+
+<div class="button-back">
+    <div class="header-item">
+        <button onclick="window.history.back()" id="white-button">Voltar</button>
+    </div>
+</div>
+{% endblock %}

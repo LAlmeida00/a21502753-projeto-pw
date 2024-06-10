@@ -1,0 +1,134 @@
+* {
+    font-family: "Lexend", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Ajusta automaticamente o número de colunas */
+    grid-template-rows: auto 1fr auto; /* Ajusta automaticamente a altura das linhas */
+    grid-template-areas:
+        'header'
+        'main-content'
+        'footer';
+    gap: 10px;
+    min-height: 100vh; /* Garante que o container ocupe toda a altura da viewport */
+}
+
+/* Estilos para o header */
+header {
+    grid-area: header;
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column;
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilos para o menu */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibe os itens do menu em linha */
+}
+
+.menu li {
+    margin-left: 20px; /* Adiciona espaçamento entre os itens do menu */
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para o botão de alternância */
+.toggle-button {
+    width: 75px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    background: #ebebeb;
+    border-radius: 25px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+}
+
+/* Estilos para o círculo dentro do botão */
+.toggle-button::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 22px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease; /* Animação de transição */
+    transform: translateX(0); /* Posição inicial do círculo */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha o menu à direita */
+}
+
+.toggle-container {
+    display: flex; /* Ativa o flexbox */
+    justify-content: flex-end; /* Alinha o menu à direita */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilos para o botão de alternância no modo escuro */
+body.dark-mode .toggle-button {
+    background-color: #333; /* Altere a cor de fundo para o modo escuro */
+}
+
+/* Estilos para o círculo dentro do botão no modo escuro */
+body.dark-mode .toggle-button::before {
+    background: #242424;
+    transform: translateX(50px); /* Movimento do círculo para a direita no modo escuro */
+}
+
+/* Estilos para o corpo da página no modo escuro */
+body.dark-mode {
+    background-color: #242424; /* Altere a cor de fundo para o modo escuro */
+    color: #fff; /* Altere a cor do texto para o modo escuro */
+}
+
+/* Estilos para o main */
+main {
+    grid-area: main-content;
+    padding: 20px;
+}
+
+/* Estilos para o footer */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.project-photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Isso assegura que a imagem preencha o espaço definido sem distorção */
+}
+
+.user-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Faz a imagem ser circular */
+}

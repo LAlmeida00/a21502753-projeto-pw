@@ -1,0 +1,20 @@
+{% extends 'projetoPortfolioPW/layout.html' %}
+
+{% block content %}
+    <h1>{{ disciplina.nome }}</h1>
+    <p>Ano: {{ disciplina.ano }}</p>
+    <p>Semestre: {{ disciplina.semestre }}</p>
+    <p>ECTS: {{ disciplina.ects }}</p>
+
+    {% if request.user.is_authenticated %}
+        <h2>Opções:</h2>
+        <ul>
+            <a href="{% url 'projetoPortfolioPW:editar_disciplina' disciplina.id %}"><button>Editar informação da disciplina</button></a>
+            <a href="{% url 'projetoPortfolioPW:apagar_disciplina' disciplina.id %}"><button>Apagar Disciplina</button></a>
+            <a href="{% url 'projetoPortfolioPW:novo_projeto' disciplina_id=disciplina.id %}"><button>Criar Novo Projeto</button></a>
+        </ul>
+    {% endif %}
+
+    <p><a href="{% url 'projetoPortfolioPW:projeto' disciplina_id=disciplina.id %}">Ver Projeto</a></p>
+    <p><a href="{% url 'projetoPortfolioPW:disciplinas' %}">Voltar para  todas disciplinas</a></p>
+{% endblock %}

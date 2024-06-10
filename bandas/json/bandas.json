@@ -1,0 +1,72 @@
+[
+  {
+    "foto": "bandas/metallica.jpg",
+    "nome": "Metallica",
+    "biografia": "Metallica é uma banda de heavy metal formada em Los Angeles, Califórnia, em 1981. Fundada por Lars Ulrich e James Hetfield, a banda rapidamente ganhou notoriedade no cenário do metal. Com álbuns icônicos como 'Master of Puppets' e 'Ride the Lightning', Metallica é conhecida por suas letras profundas e performances energéticas. Eles são uma das bandas mais influentes e bem-sucedidas da história do heavy metal.",
+    "nacionalidade": "Estados Unidos",
+    "ano_criacao": 1981
+  },
+  {
+    "foto": "bandas/iron_maiden.jpg",
+    "nome": "Iron Maiden",
+    "biografia": "Iron Maiden é uma banda britânica de heavy metal formada em Londres, em 1975. Liderada pelo baixista e principal compositor Steve Harris, a banda é conhecida por seus álbuns conceituais e performances teatrais. Clássicos como 'The Number of the Beast' e 'Powerslave' ajudaram a consolidar seu lugar como uma das bandas mais icônicas do gênero. Com Eddie, sua mascote, Iron Maiden deixou uma marca indelével no mundo do metal.",
+    "nacionalidade": "Reino Unido",
+    "ano_criacao": 1975
+  },
+  {
+    "foto": "bandas/megadeth.jpg",
+    "nome": "Megadeth",
+    "biografia": "Megadeth é uma banda de thrash metal formada em Los Angeles, Califórnia, em 1983 por Dave Mustaine, após sua saída do Metallica. A banda é conhecida por seu som rápido e técnico, com letras que abordam temas políticos, de guerra e filosofia. Álbuns como 'Rust in Peace' e 'Countdown to Extinction' são considerados clássicos do thrash metal. Megadeth é uma das 'Big Four' do thrash, junto com Metallica, Slayer e Anthrax.",
+    "nacionalidade": "Estados Unidos",
+    "ano_criacao": 1983
+  },
+  {
+    "foto": "bandas/sepultura.jpg",
+    "nome": "Sepultura",
+    "biografia": "Sepultura é uma banda de thrash metal formada em Belo Horizonte, Brasil, em 1984. Inicialmente conhecida por seu som extremo e cru, a banda evoluiu para incluir influências de música tribal brasileira. Álbum como 'Arise' e 'Roots' ajudaram a solidificar seu status internacional. Sepultura é uma das bandas mais importantes da cena metal sul-americana, reconhecida por sua inovação e impacto global.",
+    "nacionalidade": "Brasil",
+    "ano_criacao": 1984
+  },
+  {
+    "foto": "bandas/the_prodigy.jpg",
+    "nome": "The Prodigy",
+    "biografia": "The Prodigy é uma banda britânica de música eletrônica formada em 1990. Conhecida por misturar elementos de rave, techno, industrial e punk, a banda se destacou com hits como 'Firestarter' e 'Breathe'. Eles revolucionaram a música eletrônica com seu som agressivo e performances ao vivo enérgicas. The Prodigy influenciou uma geração de músicos e continua a ser uma força dominante na cena musical.",
+    "nacionalidade": "Reino Unido",
+    "ano_criacao": 1990
+  },
+  {
+    "foto": "bandas/the_chemical_brothers.jpg",
+    "nome": "The Chemical Brothers",
+    "biografia": "The Chemical Brothers é um duo britânico de música eletrônica formado em Manchester em 1989. Tom Rowlands e Ed Simons são conhecidos por suas performances ao vivo intensas e produção musical inovadora. Com álbuns como 'Dig Your Own Hole' e 'Surrender', eles ajudaram a definir o gênero big beat. A dupla é famosa por seus videoclipes criativos e colaborações com vários artistas renomados.",
+    "nacionalidade": "Reino Unido",
+    "ano_criacao": 1989
+  },
+  {
+    "foto": "bandas/queen.jpg",
+    "nome": "Queen",
+    "biografia": "Queen é uma banda britânica de rock formada em Londres em 1970. Liderada por Freddie Mercury, eles são conhecidos por suas composições variadas e inovadoras. Clássicos como 'Bohemian Rhapsody' e 'We Will Rock You' fizeram história no rock. As performances ao vivo, especialmente no Live Aid, são lendárias. Queen é aclamada por sua versatilidade musical e impacto duradouro no mundo da música.",
+    "nacionalidade": "Reino Unido",
+    "ano_criacao": 1970
+  },
+  {
+    "foto": "bandas/the_rolling_stones.jpg",
+    "nome": "The Rolling Stones",
+    "biografia": "The Rolling Stones é uma banda britânica de rock formada em Londres em 1962. Mick Jagger e Keith Richards, junto com seus companheiros de banda, criaram um som que definiu uma era. Com álbuns como 'Exile on Main St.' e 'Sticky Fingers', eles são considerados uma das maiores bandas de rock de todos os tempos. Suas performances energéticas e longevidade fizeram deles ícones culturais.",
+    "nacionalidade": "Reino Unido",
+    "ano_criacao": 1962
+  },
+  {
+    "foto": "bandas/led_zeppelin.jpg",
+    "nome": "Led Zeppelin",
+    "biografia": "Led Zeppelin foi uma banda britânica de rock formada em Londres em 1968. Jimmy Page, Robert Plant, John Paul Jones e John Bonham criaram um som poderoso e inovador que influenciou o hard rock e o heavy metal. Com álbuns como 'Led Zeppelin IV' e 'Physical Graffiti', eles são reconhecidos por sua musicalidade complexa e performances épicas. Led Zeppelin deixou um legado duradouro na música.",
+    "nacionalidade": "Reino Unido",
+    "ano_criacao": 1968
+  },
+  {
+    "foto": "bandas/aerosmith.jpg",
+    "nome": "Aerosmith",
+    "biografia": "Aerosmith é uma banda de rock americana formada em Boston, Massachusetts, em 1970. Steven Tyler e Joe Perry, conhecidos como os 'Toxic Twins', lideram a banda com seu som característico. Com hits como 'Dream On' e 'Walk This Way', eles alcançaram sucesso comercial e crítico ao longo das décadas. Aerosmith é uma das bandas de rock mais bem-sucedidas de todos os tempos, conhecida por suas performances eletrizantes.",
+    "nacionalidade": "Estados Unidos",
+    "ano_criacao": 1970
+  }
+]

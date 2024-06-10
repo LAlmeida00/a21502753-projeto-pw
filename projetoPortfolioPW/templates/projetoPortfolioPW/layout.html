@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: black;
+            margin: 0; /* Remover a margem padrão do body */
+        }
+        .header {
+            background-color: #000;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0; /* Fixar a classe header no topo da página */
+            width: 100%; /* Definir a largura da classe header como 100% */
+            z-index: 1000;  /* Para garantir que a header fique acima de outros elementos */
+        }
+        .main-content {
+            margin-top: 100px; /* Ajustar o margin-top do main para acomodar o header fixo */
+            padding-top: 20px; /* Adicionar um preenchimento superior */
+            padding-bottom: 70px; /* Ajustar o padding-bottom para acomodar o footer */
+        }
+        .footer {
+            background-color: #000;
+            color: white;
+            padding: 5px 20px;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            height: 40px;
+            z-index: 1000; /* Para garantir que o footer fique acima de outros elementos */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Portfolio</h1>
+        <a href="{% url 'projetoPortfolioPW:registo' %}"><button>Registo</button></a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'projetoPortfolioPW:logout' %}"><button>Logout</button></a>
+            Username:{{request.user.username}}
+        {% else %}
+            <a href="{% url 'projetoPortfolioPW:login' %}"><button>Login</button></a>
+        {% endif %}
+    </div>
+
+    <div class="main-content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="footer">
+        <p>&copy; {% now "Y" %} Programação Web, Universidade Lusófona Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

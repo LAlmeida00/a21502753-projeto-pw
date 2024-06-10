@@ -1,0 +1,53 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+
+<style>
+    .project-photo {
+        width: 650px;
+        height: 650px;
+        object-fit: cover;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .projects-list li {
+        margin-bottom: 20px;
+    }
+</style>
+
+<div>
+    <h1>O Meu Porfolio</h1>
+    <h2>Projetos PW2024</h2>
+    <div class="projects-container">
+        <ul class="projects-list">
+            {% for project in projects %}
+                <li>
+                    <p><strong>{{ project.project_name }}</strong></p><br>
+                    {% if project.photo %}
+                        <img src="{{ project.photo.url }}" alt="Project Photo" class="project-photo"><br>
+                    {% endif %}
+                    {% if project.website_link %}
+                        <a href="{{ project.website_link }}" target="_blank">Website</a><br>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% if request.user.is_authenticated %}
+    <h2>Opções de Edição:</h2>
+    <a href="{% url 'portfolio:edit_portfolio' %}"><button>Editar Pagina</button></a>
+{% endif %}
+
+{% endblock %}

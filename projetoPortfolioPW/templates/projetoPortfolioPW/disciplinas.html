@@ -1,0 +1,16 @@
+{% extends 'projetoPortfolioPW/layout.html' %}
+
+{% block content %}
+    <h1>Todas as Disciplinas</h1>
+        {% for disciplina in disciplinas %}
+                <p><a href="{% url 'projetoPortfolioPW:disciplina' disciplina.id %}">{{ disciplina.nome }}</a></p>
+        {% endfor %}
+
+        {% if request.user.is_authenticated %}
+        <h2>Opções:</h2>
+        <ul>
+                <a href="{% url 'projetoPortfolioPW:nova_disciplina'%}"><button>Criar Nova Disciplina</button></a>
+        </ul>
+        {% endif %}
+    <p><a href="{% url 'projetoPortfolioPW:projetoPortfolioPW' %}">Voltar para o Inicio</a></p>
+{% endblock %}

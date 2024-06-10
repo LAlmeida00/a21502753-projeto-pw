@@ -1,0 +1,38 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+    <h1> {{ album.banda }} </h1>
+
+    {% if album.capa %}
+        <img src="{{ album.capa.url }}" alt="{{ album.nome }} Foto" width="150px">
+    {% endif %}
+
+    <h2> Album: {{ album.nome }}, {{ album.ano }} </h2>
+
+    <p>Lista de músicas do álbum:</p>
+    <ul>
+        {% for musica in musicas %}
+        <li>
+            <a href="{% url 'bandas:musica' musica.id %}">{{ musica.nome }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+<div>
+    {% if request.user.is_authenticated %}
+        <h2>Opções de Edição:</h2>
+        <a href="{% url 'bandas:apagar_album' album_id=album.id %}" class="header-item"><button id="white-button">Apagar Album</button></a>
+        <a href="{% url 'bandas:editar_album' album_id=album.id %}" class="header-item"><button id="white-button">Editar informação do Album</button></a>
+        <a href="{% url 'bandas:nova_musica' %}" class="header-item"><button id="white-button">Inserir nova Musica no Album</button></a>
+    {% endif %}
+</div>
+
+
+<div class="button-back">
+    <div class="header-item">
+        <button onclick="window.history.back()" id="white-button">Cancelar</button>
+    </div>
+</div>
+
+{% endblock %}

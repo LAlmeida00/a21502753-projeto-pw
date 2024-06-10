@@ -1,0 +1,19 @@
+{% extends 'projetoPortfolioPW/layout.html' %}
+
+{% block content %}
+    <h1>Curso: {{ curso.nome }}</h1>
+    <p>Apresentação: {{ curso.apresentacao }}</p>
+    <p>Objetivos: {{ curso.objetivos }}</p>
+    <p>Competências: {{ curso.competencias }}</p>
+
+    {% if request.user.is_authenticated %}
+        <h2>Opções:</h2>
+        <ul>
+                <a href="{% url 'projetoPortfolioPW:editar_curso' curso.id %}"><button>Editar informação do Curso</button></a>
+                <a href="{% url 'projetoPortfolioPW:apagar_curso' curso.id %}"><button>Apagar Curso</button></a>
+        </ul>
+    {% endif %}
+
+    <p><a href="{% url 'projetoPortfolioPW:disciplinas' %}">Ver todas as disciplinas</a></p>
+    <p><a href="{% url 'projetoPortfolioPW:projetoPortfolioPW' %}">Voltar</a></p>
+{% endblock %}

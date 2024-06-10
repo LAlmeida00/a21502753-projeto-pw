@@ -1,0 +1,47 @@
+{% extends 'bandas/layout.html' %}
+
+
+{% block content %}
+<div class="banda-background" style="background-image: url('{{ banda.foto.url }}');">
+    <div class="banda-info">
+        <h2>{{ banda.nome }}</h2>
+        <p>Biografia:</p> <p>{{ banda.biografia }}</p>
+        <p>Nacionalidade: {{ banda.nacionalidade }}</p>
+        <p>Ano de Criação: {{ banda.ano_criacao }}</p>
+    </div>
+</div>
+
+
+<h4>Álbuns:</h4>
+<div class="albums-list">
+    {% for album in albums %}
+    <li class="album-item">
+        <a href="{% url 'bandas:album' album.id %}" class="item-link">
+            {% if album.capa %}
+                <img src="{{ album.capa.url }}" alt="{{ album.nome }} Foto" >
+            {% endif %}
+            <p>{{ album.ano }}</p>
+            <p>{{ album.nome }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</div>
+
+
+<div>
+    {% if request.user.is_authenticated %}
+        <h2>Opções de Edição:</h2>
+        <p>Existem {{ albums|length }} álbuns desta banda na base de dados:</p>
+        <a href="{% url 'bandas:apagar_banda' banda.id %}" class="header-item"><button id="white-button">Apagar banda e os seus álbuns</button></a>
+        <a href="{% url 'bandas:editar_banda' banda.id %}" class="header-item"><button id="white-button">Editar informação da banda</button></a>
+        <a href="{% url 'bandas:novo_album' %}"class="header-item"><button id="white-button">Inserir novo Álbum</button></a>
+    {% endif %}
+</div>
+
+
+<div class="button-back">
+    <div class="header-item">
+        <button onclick="window.history.back()" id="white-button">Voltar</button>
+    </div>
+</div>
+{% endblock %}

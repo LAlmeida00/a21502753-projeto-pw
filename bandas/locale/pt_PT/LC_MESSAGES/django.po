@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Your password can’t be too similar to your other personal information."
+msgstr "A sua palavra-chave não pode ser muito semelhante às suas outras informações pessoais."
+
+msgid "Your password must contain at least 8 characters."
+msgstr "A sua palavra-chave deve conter pelo menos 8 caracteres."
+
+msgid "Your password can’t be a commonly used password."
+msgstr "A sua palavra-chave não pode ser uma palavra-chave comum."
+
+msgid "Your password can’t be entirely numeric."
+msgstr "A sua palavra-chave não pode ser totalmente numérica."

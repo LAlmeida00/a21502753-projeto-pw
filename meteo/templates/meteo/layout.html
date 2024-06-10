@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'meteo/estilos.css' %}">
+
+    <title>Meteo</title>
+
+    <style>
+        {% block style %}{% endblock %}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="{% url 'meteo:index' %}">Home</a> |
+                <a href="{% url 'meteo:meteo_prox_5_days' %}">Previsão Próximos 5 Dias</a> |
+                <a href="{% url 'meteo:api_meteo' %}">API PW2024 de Meteorologia</a>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <footer>
+            <p>&copy; {% now "Y" %} Programação Web, Universidade Lusófona Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

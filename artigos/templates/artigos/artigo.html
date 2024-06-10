@@ -1,0 +1,39 @@
+{% extends 'artigos/layout.html' %}
+
+{% load custom_filters %}
+
+{% block content %}
+    <img src="{{ artigo.user.image_profile.url }}" alt="Imagem do Autor">
+    <p><a href="{% url 'artigos:user' artigo.user.id %}">{{ artigo.user.user }}</a></p>
+    <h1><a href="{% url 'artigos:artigo' artigo.id %}">{{ artigo.titulo }}</a></h1>
+    <p>{{ artigo.texto }}</p>
+    {% if imagens %}
+        <h2>Imagens:</h2>
+        <ul style="list-style: none; padding: 0;">
+            {% for imagem in imagens %}
+                <li><img src="{{ imagem.image_post.url }}" alt="Imagem do Post"></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <h2>Comentários:</h2>
+    <ul style="list-style: none; padding: 0;">
+        {% for comentario in comentarios %}
+            <li><img src="{{ comentario.user.image_profile.url }}" alt="Imagem do Autor do Comentário"></li>
+            <li><a href="{% url 'artigos:user' comentario.user.id %}">{{ comentario.user }}</a></li>
+            <li>{{ comentario.texto }}</li>
+            <li>
+                {% with rating=comentario|get_rating %}
+                    {% if rating %}
+                        {% for i in rating.rate_value|get_range %}
+                            <span>⭐</span>
+                        {% endfor %}
+                    {% else %}
+                        <span>Sem avaliação</span>
+                    {% endif %}
+                {% endwith %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+

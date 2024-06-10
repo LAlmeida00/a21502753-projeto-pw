@@ -1,0 +1,20 @@
+{% extends 'meteo/layout.html' %}
+
+{% block content %}
+    <div>
+        <h1>API IPMA de Meteorologia</h1><br>
+        <h1>{{ city }}</h1><br>
+        <strong>Data:</strong> {{ data }}<br>
+        <strong>Temp. Min:</strong> {{ temp_min }}°C<br>
+        <strong>Temp. Max:</strong> {{ temp_max }}°C<br>
+        <strong>Tempo:</strong> {{ weather }}<br>
+        <img src="{{ icon_url }}" style="width:30ch">
+        <p><strong>Fonte:</strong>IPMA API</p>
+    </div>
+    <div>
+        <p>A pagina <a href="https://api.ipma.pt/" target="blank">API IPMA</a> de Portugal oferece fácil acesso e gratuito as informações meteorológicas de todo o país. Com esta API,
+        os desenvolvedores podem integrar dados meteorológicos nas suas aplicacoes, websites e serviços,
+        fornecendo aos utilizadores um acesso conveniente a previsões e condições climáticas de portugal.
+        Temos um exemplo prático que utilizad a API IPMA para obter a meteorologia atual da cidade de Lisboa.</p>
+    </div>
+{% endblock %}

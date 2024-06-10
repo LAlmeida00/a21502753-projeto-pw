@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        body
+        {
+            background-color: black;
+            color: white;
+            font-family: 'Chakra Petch', sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav
+        {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li
+        {
+            float: left;
+        }
+
+        nav li a
+        {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li img
+        {
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        nav li a:hover
+        {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main
+        {
+            padding: 20px;
+        }
+
+        h1, h2, h3
+        {
+            margin-top: 0;
+        }
+
+        h1
+        {
+            font-size: 90px;
+            color: white;
+        }
+
+        p
+        {
+            line-height: 1.5;
+            color: white;
+        }
+        footer
+        {
+            position: fixed;
+            bottom: 5px;
+            width: 100%;
+            background-color: #333;
+            padding: 5px 0;
+            text-align: center;
+            color: white;
+            height: 40px;
+        }
+        .logo
+        {
+            width: 20px;
+            height: auto;
+
+        }
+
+    </style>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="{% url 'clanwebsite:home' %}">
+                 <img src="/media/clanwebsite/logotipo.png" alt="Logo" class="logo">
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'clanwebsite:home' %}">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'clanwebsite:gallery' %}">
+                Gallery
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'clanwebsite:about' %}">
+                About
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+<main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+
+<footer>
+    <p>&copy; {% now "Y" %} a21502753 - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

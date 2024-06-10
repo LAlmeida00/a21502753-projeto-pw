@@ -1,0 +1,24 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+    <h1>Bandas Populares</h1>
+    <ul class="bandas-list">
+        {% for banda in bandas %}
+            <li class="banda-item">
+                <a href="{% url 'bandas:banda' banda.id %}" class="item-link">
+                    {% if banda.foto %}
+                        <img src="{{ banda.foto.url }}" alt="{{ banda.nome }} Foto">
+                    {% endif %}
+                    <p>{{ banda.nome }}</p>
+                    <p>Banda</p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% if request.user.is_authenticated %}
+        <h2>Opções de Edição:</h2>
+        <p>Existem {{ bandas|length }} bandas na base de dados.</p>
+        <a href="{% url 'bandas:nova_banda' %}" class="header-item"><button id="white-button">Inserir nova Banda</button></a>
+    {% endif %}
+{% endblock %}

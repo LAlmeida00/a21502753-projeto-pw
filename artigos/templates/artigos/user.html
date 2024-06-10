@@ -1,0 +1,29 @@
+{% extends 'artigos/layout.html' %}
+
+{% block content %}
+    <h1>Perfil de {{ user.user }}</h1>
+    <img src="{{ user.image_profile.url }}" alt="Imagem de Perfil">
+    <p>Nome de usuário: {{ user.user }}</p>
+    <p>Total de Artigos: {{ total_artigos }}</p>
+    <p>Total de Comentários: {{ total_comentarios }}</p>
+
+    <h2>Artigos de {{ user.user }}:</h2>
+    <ul>
+        {% for artigo in artigos %}
+            <li>
+                <a href="{% url 'artigos:artigo' artigo.id %}">{{ artigo.titulo }}</a>
+            </li>
+        {% empty %}
+            <li>Nenhum artigo disponível.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Comentários de {{ user.user }}:</h2>
+    <ul>
+        {% for comentario in comentarios %}
+            <li>{{ comentario.texto }} - {{ comentario.post }}</li>
+        {% empty %}
+            <li>Nenhum comentário disponível.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

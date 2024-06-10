@@ -1,0 +1,41 @@
+{% extends 'projetoPortfolioPW/layout.html' %}
+
+{% block content %}
+    {% if projeto %}
+        <h1>Projeto</h1>
+        <p><strong>Descrição:</strong> {{ projeto.descricao }}</p>
+        <p><strong>Conceitos Aplicados:</strong></p>
+        <p>{{ projeto.conceitos_aplicados }}</p>
+        <p><strong>Tecnologias Utilizadas:</strong></p>
+        <p>{{ projeto.tecnologias_utilizadas }}</p>
+        <p><strong>Linguagens de Programação:</strong>
+            {% for linguagem in projeto.linguagens_programacao.all %}
+                <p>{{ linguagem.nome }}</p>
+            {% endfor %}
+        </p>
+        {% if projeto.imagem %}
+            <p><strong>Imagem:</strong></p>
+            <img src="{{ projeto.imagem.url }}" alt="{{ projeto.descricao }}">
+        {% endif %}
+        {% if projeto.video_link %}
+            <p><strong>Link do Vídeo:</strong> <a href="{{ projeto.video_link }}">{{ projeto.video_link }}</a></p>
+        {% endif %}
+        {% if projeto.github_link %}
+            <p><strong>Link do GitHub:</strong> <a href="{{ projeto.github_link }}">{{ projeto.github_link }}</a></p>
+        {% endif %}
+
+        {% if request.user.is_authenticated %}
+        <h2>Opções:</h2>
+        <ul>
+            <a href="{% url 'projetoPortfolioPW:editar_projeto' projeto.id %}"><button>Editar Informação do Projeto</button></a>
+            <a href="{% url 'projetoPortfolioPW:apagar_projeto' projeto.id %}"><button>Apagar Projeto</button></a>
+        </ul>
+    {% endif %}
+
+
+        <p><a href="{% url 'projetoPortfolioPW:disciplina' disciplina_id=projeto.disciplina.id %}">Voltar para a Disciplina</a></p>
+    {% else %}
+        <p>O projeto não existe.</p>
+    {% endif %}
+{% endblock %}
+

@@ -1,0 +1,35 @@
+{% extends 'meteo/layout.html' %}
+
+{% block content %}
+    <div>
+        <h1>Selecione um Local</h1>
+         <form method="post">
+            {% csrf_token %}
+            <select name="location" id="location-select">
+                {% for location in locations %}
+                    {% if location == selected_location %}
+                        <option value="{{ location }}" selected>{{ location }}</option>
+                    {% else %}
+                        <option value="{{ location }}">{{ location }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <button type="submit">Atualizar Previsão</button> <!-- Botão de envio -->
+        </form>
+
+        <h2>Previsão do Tempo para os Próximos 5 Dias:</h2>
+        <h2>{{ selected_location }}</h2><br>
+
+        <div class="weather-days-container">
+            {% for weather_day in weather_days %}
+                <div class="weather-day">
+                    <strong>Data:</strong> {{ weather_day.data }}<br>
+                    <img src="{{ weather_day.icon_url }}" style="width:15ch"><br>
+                    <strong>Temp. Min:</strong> {{ weather_day.temp_min }}°C<br>
+                    <strong>Temp. Max:</strong> {{ weather_day.temp_max }}°C<br>
+                    <strong>Tempo:</strong> {{ weather_day.weather }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

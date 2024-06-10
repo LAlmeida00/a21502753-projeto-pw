@@ -1,0 +1,14 @@
+{% extends 'projetoPortfolioPW/layout.html' %}
+
+{% block content %}
+    <h3>Editar Curso</h3>
+
+    <form action="{% url 'projetoPortfolioPW:editar_curso' curso.id %}" method="post" enctype='multipart/form-data'>
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Guardar">
+    </form>
+    <a href="javascript:history.back()">Cancelar</a>
+{% endblock %}

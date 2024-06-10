@@ -1,0 +1,173 @@
+[
+    {
+        "nome": "Python"
+    },
+    {
+        "nome": "JavaScript"
+    },
+    {
+        "nome": "Java"
+    },
+    {
+        "nome": "C++"
+    },
+    {
+        "nome": "C#"
+    },
+    {
+        "nome": "PHP"
+    },
+    {
+        "nome": "Ruby"
+    },
+    {
+        "nome": "Swift"
+    },
+    {
+        "nome": "TypeScript"
+    },
+    {
+        "nome": "Go"
+    },
+    {
+        "nome": "R"
+    },
+    {
+        "nome": "Objective-C"
+    },
+    {
+        "nome": "Kotlin"
+    },
+    {
+        "nome": "Scala"
+    },
+    {
+        "nome": "Perl"
+    },
+    {
+        "nome": "Haskell"
+    },
+    {
+        "nome": "Lua"
+    },
+    {
+        "nome": "Matlab"
+    },
+    {
+        "nome": "SQL"
+    },
+    {
+        "nome": "HTML"
+    },
+    {
+        "nome": "CSS"
+    },
+    {
+        "nome": "Shell"
+    },
+    {
+        "nome": "Assembly"
+    },
+    {
+        "nome": "Rust"
+    },
+    {
+        "nome": "Dart"
+    },
+    {
+        "nome": "VBA"
+    },
+    {
+        "nome": "Groovy"
+    },
+    {
+        "nome": "PowerShell"
+    },
+    {
+        "nome": "F#"
+    },
+    {
+        "nome": "COBOL"
+    },
+    {
+        "nome": "Ada"
+    },
+    {
+        "nome": "ABAP"
+    },
+    {
+        "nome": "VBScript"
+    },
+    {
+        "nome": "Lisp"
+    },
+    {
+        "nome": "Scheme"
+    },
+    {
+        "nome": "Prolog"
+    },
+    {
+        "nome": "Smalltalk"
+    },
+    {
+        "nome": "Elixir"
+    },
+    {
+        "nome": "Clojure"
+    },
+    {
+        "nome": "D"
+    },
+    {
+        "nome": "Julia"
+    },
+    {
+        "nome": "CoffeeScript"
+    },
+    {
+        "nome": "ActionScript"
+    },
+    {
+        "nome": "Apex"
+    },
+    {
+        "nome": "Delphi"
+    },
+    {
+        "nome": "Erlang"
+    },
+    {
+        "nome": "FoxPro"
+    },
+    {
+        "nome": "Tcl"
+    },
+    {
+        "nome": "Visual Basic"
+    },
+    {
+        "nome": "VHDL"
+    },
+    {
+        "nome": "Verilog"
+    },
+    {
+        "nome": "XQuery"
+    },
+    {
+        "nome": "XPath"
+    },
+    {
+        "nome": "XSLT"
+    },
+    {
+        "nome": "Zsh"
+    },
+    {
+        "nome": "Bash"
+    },
+    {
+        "nome": "C"
+    }
+]

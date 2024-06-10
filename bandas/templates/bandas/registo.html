@@ -1,0 +1,26 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+
+<h1>Registo</h1>
+
+    {% if mensagem %}
+        <p>{{ mensagem }}</p>
+    {% endif %}
+<div class="form_container">
+    <form action="{% url 'bandas:registo' %}" method="post">
+      {% csrf_token %}
+      <input type="text" name="username" placeholder="O seu username.."><br>
+      <input type="email" name="email" placeholder="O seu email.."><br>
+      <input type="password" name="password" placeholder="Defina a sua password.."><br>
+      <input type="submit" value="Criar Utilizador"><br>
+    </form>
+</div>
+
+<div class="button-back">
+    <div class="header-item">
+        <button onclick="window.history.back()" id="white-button">Voltar</button>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+
+
+<style>
+    .user-photo {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%; /* Faz a imagem ser circular */
+    }
+</style>
+
+
+
+<div>
+    <p>Hello</p>
+    <p>{{ profile.landing_text }}</p>
+    {% if profile.user_photo %}
+        <img src="{{ profile.user_photo.url }}" alt="User Photo" class="user-photo">
+    {% endif %}
+    <br>
+    <a href="{% url 'portfolio:resume' %}"><button>Resume</button></a>
+    <a href="{% url 'portfolio:portfolio' %}"><button>Portfolio</button></a>
+
+    <div id="datetime"></div>
+    <div id="weather-container"></div>
+</div>
+
+{% if request.user.is_authenticated %}
+    <h2>Opções de Edição:</h2>
+    <a href="{% url 'portfolio:edit_profile' %}"><button>Editar Pagina</button></a>
+{% endif %}
+
+{% endblock %}
+
+

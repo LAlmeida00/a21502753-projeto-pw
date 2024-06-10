@@ -1,0 +1,25 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+    {% if album.capa %}
+        <img src="{{ album.capa.url }}" alt="{{ album.nome }} Foto" width="150px">
+    {% endif %}
+
+<h3>{{ musica.nome }}</h3>
+<p>Duracao: {{ musica.duracao_musica }}</p>
+<p>Link Spotify: <a href="{{ musica.spotify_link }}">{{ musica.spotify_link }}</a></p>
+
+<div>
+    {% if request.user.is_authenticated %}
+        <h4>Modo Criar, Modificar e Apagar:</h4>
+        <a href="{% url 'bandas:apagar_musica' musica.id %}" class="header-item"><button id="white-button">Apagar Musica</button></a>
+        <a href="{% url 'bandas:editar_musica' musica.id %}" class="header-item"><button id="white-button">Editar Musica</button></a>
+    {% endif %}
+</div>
+
+<div class="button-back">
+    <div class="header-item">
+        <button onclick="window.history.back()" id="white-button">Cancelar</button>
+    </div>
+</div>
+{% endblock %}

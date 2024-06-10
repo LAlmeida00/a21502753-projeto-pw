@@ -1,0 +1,18 @@
+{% extends 'filmes/layout.html' %}
+
+{% block content %}
+    {% for genero, filmes in filmes_por_genero.items %}
+        <h2>{{ genero.nome }}</h2>
+        <ul>
+            {% for filme in filmes %}
+                <li>
+                    <a href="{% url 'filmes:detalhes_filme' filme.id %}">{{ filme.nome }}</a>
+                    <strong>Atores:</strong>
+                        {% for ator in filme.atores.all %}
+                            {{ ator.nome }}
+                        {% endfor %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}

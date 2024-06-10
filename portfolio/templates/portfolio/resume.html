@@ -1,0 +1,51 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+    <div>
+        <h1>Curriculo</h1>
+        {% if profile.user_photo %}
+            <img src="{{ profile.user_photo.url }}" alt="User Photo">
+        {% endif %}
+        <p><strong>Nome:</strong>{{ profile.user_name }}</p>
+        <p><strong>Interesses:</strong></p>
+        <ul>
+            {% for interest in profile.interests_set.all %}
+                <li>{{ interest.interest_title }} - {{ interest.description }}</li>
+            {% endfor %}
+        </ul>
+
+        <p><strong>Aptidões:</strong></p>
+        <ul>
+            {% for skill in profile.skills_set.all %}
+                <li>{{ skill.skills_title }} - {{ skill.description }}</li>
+            {% endfor %}
+        </ul>
+
+        <p><strong>Competências:</strong></p>
+        <ul>
+            {% for competency in profile.competencies_set.all %}
+                <li>{{ competency.competency_title }} - {{ competency.description }}</li>
+            {% endfor %}
+        </ul>
+
+        <p><strong>Experiência:</strong></p>
+        <ul>
+            {% for experience in profile.experiences_set.all %}
+                <li>{{ experience.experience_title }} - {{ experience.start_date|date:"d/m/Y" }} to {{ experience.end_date|date:"d/m/Y" }}: {{ experience.description }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Redes Sociais</h2>
+        <ul>
+            {% for link in profile.social_links.all %}
+                <li>{{ link.get_platform_display }}: <a href="{{ link.link }}">{{ link.link }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% if request.user.is_authenticated %}
+        <h2>Opções de Edição:</h2>
+        <a href="{% url 'portfolio:edit_resume' %}"><button>Editar Pagina</button></a>
+    {% endif %}
+
+{% endblock %}
